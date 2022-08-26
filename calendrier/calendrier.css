@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Pacifico&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Dancing Script', cursive, 'Pacifico', cursive;
+    text-decoration: none;
+}
+
+:root {
+    --text-color: #3AA2DE;
+    --text-color-2: #191919;
+    --color-icon: #03a9f4;
+    --second-color: #693CE0;
+    --background: #f1fbff;
+    --h2-font: 4.2rem;
+    --p-font: 1.1rem;
+    --font-family-1: 'Dancing Script', cursive;
+    --font-family-2: 'Pacifico', cursive;
+
+
+}
+
+body {
+    background: var(--background);
+}
+
+.calendar {
+    padding: 30px 20px;
+}
+/* regarder en mode f12 dev pour parametrer  */
+.months-container {
+    justify-content: center;
+    gap: 40px;
+}
+
+.calendar .months-container .month-container {
+    background: #fff;
+    min-width: 280px;
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+
+}
+
+.calendar table.month th.month-title{
+    color: var(--text-color);
+    font-size: 1.9em;
+    font-family: var(--font-family-1);
+    font-weight: 200;
+}
+
+.calendar table.month th.day-header{
+    color: var(--second-color);
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+.calendar table.month td:first-child,
+.calendar table.month td:last-child,
+.calendar table.month thead tr:nth-child(2) th:first-child,
+.calendar table.month thead tr:nth-child(2) th:last-child
+{
+    color: var(--color-icon);
+}
+
+.calendar table.month td.day .day-content{
+    padding: 8px 8px;
+}
+
+.month tr td
+{
+    font-size: 0.9em;
+    font-weight: 700;
+    color: var(--second-color);
+}
+
+.calendar table.month td.day .day-content:hover
+{
+    background: var(--text-color);
+    color: var(--background);
+}
+
+.calendar .calendar-header
+{
+    border: none;
+}
+
+.calendar .calendar-header table th:hover
+{
+    background: transparent;
+}
+
+.calendar .calendar-header .year-title
+{
+    font-size: 4em;
+    font-family: var(--font-family-1);
+    color: var(--text-color);
+}
+
+.calendar .calendar-header .year-neighbor
+{
+    font-size: 2.10em;
+}
+
+calendar .calendar-header .year-neighbor2
+{
+    font-size: 1em;
+}

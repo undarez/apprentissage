@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Police -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=League+Spartan:wght@100&family=Square+Peg&family=Titillium+Web:ital@1&display=swap"
+        rel="stylesheet">
+    <title>Portfolio</title>
+    <!-- lien fichier -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="bx bx-menu bx-md" id="menu-icon "></div>
+        <img src="img/logo2.png" class="logo" alt="logo"><img>
+        <div class="navigation">
+            <ul>
+
+                <li class="list active">
+                    <a href="#home" id="home">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="text menu">menu</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#services">
+                        <span class="icon">
+                            <ion-icon name="library-outline"></ion-icon>
+                        </span>
+                        <span class="text projet">projet </span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#propos">
+                        <span class="icon">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </span>
+                        <span class="text profil">profil</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#contact">
+                        <span class="icon">
+                            <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                        </span>
+                        <span class="text contact">contact</span>
+                    </a>
+                </li>
+                <div class="indicator"></div>
+            </ul>
+
+        </div>
+
+        <script>
+            let list = document.querySelectorAll('.list');
+            function setActiveClass() {
+                list.forEach((item) =>
+                    item.classList.remove('active'));
+                this.classList.add('active');
+            }
+            list.forEach((item) =>
+                item.addEventListener('mouseover', setActiveClass))
+        </script>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        </ul>
+    </header>
+
+    <!-- ----- start home ----- -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h4 class="hello"> bonjour , mon nom es </h4>
+            <h1 class="nom">Billard <span class="prenom">Florian</span></h1>
+            <h3 class="apprend">j'apprends à codé en <span>HTML , CSS, </span>puis je commence le <span>JS.</span></h3>
+
+        </div>
+
+    </section>
+
+
+    <!-- ----- start a-propos ----- -->
+
+    <section class="propos" id="propos">
+        <div class="propos-img">
+            <img src="img/homme.jpg" alt="">
+        </div>
+        <div class="propos-text"></div>
+        <p class="apprend">Moi, c'est Florian cela fait un moment que j'apprends en continu, certain language
+            informatique.<br>
+            J'ai l'ambition de réalisé une formation <span class="diplomante">diploment</span> ainsi, dans faire
+            <span class="metier"> mon métier</span> par la suite.
+        </p>
+        <a href="cv-flo/cv-index.html" class="btn"> <span class="cv">Mon CV</span></a>
+        </div>
+
+
+    </section>
+
+    <!-- ----- start services ----- -->
+    <section class="services" id="services">
+        <div class="centre">
+            <h2 class="hello">Services</h2>
+            <p class="nom">Dans cette partie, vous retrouverez les services que je pourrais vous proposer. <br> mais
+                j'apprends pour le moment lol!!!</p>
+        </div>
+
+        <div class="contenu">
+            <div class="ligne">
+                <i class='bx bxs-briefcase bx-md'></i>
+                <h3 class="apprend">Developpement Web</h3>
+                <p>Je vous propose de concevoir une page web etude, <br> réaliser en amont sur l'idée de votre projet.
+                    <br>le tous responsive.
+                </p>
+
+            </div>
+
+            <div class="contenu">
+                <div class="ligne">
+                    <i class='bx bx-folder bx-md'></i>
+                    <h3 class="apprend">Mes futurs projets</h3>
+                    <p class="text-p">je prévois de réaliser plusieurs projets. <br> - Réaliser mon CV en code. <br>
+                        - Représentée une calculatrice a l'aide d'un tuto <br> Réaliser par Online Tutrials. <br>
+                        - Réaliser un calendrier concu par la meme <br> Chaine <strong class="youtube"> Youtube</strong>
+                    </p>
+                </div>
+
+    </section>
+
+    <!-- ----- start portfolio ----- -->
+
+    <section class="portfolio" id="portfolio">
+        <div class="centre">
+            <div>
+                <h2 class="hello">mes future projet en images</h2>
+                <p class="nom">comme je vous les expliqué au debut je suis en plein apprentissage je vous met en image
+                    se
+                    que
+                    je prepare par la suite.</p>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="portfolio-content">
+            <div class="box">
+                <img src="img/creation-web.jpg" alt=""></img>
+                <p class="text-p">Web design</p>
+                <h3 class="apprend">Réalisation d'une page web.</h3>
+            </div>
+
+
+
+
+            <div class="box">
+                <img src="img/calendrier-wejpgb." alt=""></img>
+                <p class="text-p"> Créer un calendrier</p>
+                <h3 class="apprend">Création d'un calendrier grâce aux Html/Css et Js.</h3>
+            </div>
+
+            <div class="box">
+                <img src="img/calendrier-terminer.png" alt=""></img>
+                <p class="test-p">2 ême projet terminé </p>
+                <h3 class="apprend"> Je vous présente le calendrier que j'ai crée grace à un tuto de <span
+                        class="youtube">Online Tutorial</span> </h3>
+                <a href="calendrier/calendrier.html" class="btn"> <span class="cv">cliquez-ici</span></a>
+            </div>
+
+
+
+
+            <div class="box">
+                <img src="img/calculatrice-vignette.png" alt=""></img>
+                <p class="test-p">Créer une calculatrice</p>
+                <h3 class="apprend"> Création d'une calculatrice entièrement fonctionnelle.</h3>
+            </div>
+
+            <div class="box">
+                <img src="img/horloge-terminé.png" alt=""></img>
+                <p class="test-p">création d'une horloge </p>
+                <h3 class="apprend"> Création d'une horloge entièrement fonctionnelle.</h3>
+            </div>
+
+
+            <div class="box">
+                <img src="img/horloge-terminé 2.png" alt=""></img>
+                <p class="test-p">1er projet terminé </p>
+                <h3 class="apprend"> Je vous présente l'horloge que j'ai crée grace à un tuto de <span
+                        class="youtube">Online Tutorial</span> </h3>
+                <a href="horloge/horloge.html" class="btn"> <span class="cv">cliquez-ici</span></a>
+            </div>
+        </div>
+
+        </div>
+
+
+    </section>
+
+    <!-- ----- start contact ----- -->
+
+    <section class="contact" id="contact">
+        <div class="contact-formulaire">
+            <h2 class="hello">Contacter-Moi</h2>
+            <p class="nom">Vous avez un projet, une création de site web, et vous aimeriez obtenir plus de
+                renseignements.</p>
+            <!-- ----- start formulaire de contact ----- -->
+            <form action="">
+                <input type="" placeholder="Votre Nom" required>
+                <input type="email" name="" id="" placeholder="Votre Email" required>
+                <input type="" placeholder="écrire le sujet" required>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Votre Message" required></textarea>
+                <input type="envoyer" name="" value="envoyer" class="send">
+            </form>
+
+        </div>
+
+        <div class="contact-img">
+            <img src="img/contact-me.jpg" alt="">
+        </div>
+
+    </section>
+
+    <!-- ----- start footer ----- -->
+    <div class="footer">
+        <p class="nom">2022 tous droits réserver | le design et le développement a été créé par Billard Florian! | grâce
+            au tuto de Tahmid Ahmed</p>
+        <div class="icon-footer">
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-snapchat'></i></a>
+        </div>
+    </div>
+
+    <script src="java.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,649 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3.5rem;
+    font-family: 'League Spartan', sans-serif 'Square Peg', cursive 'Titillium Web', sans-serif , 'Josefin Sans', sans-serif;
+    
+
+}
+
+body {
+    background-image: linear-gradient(135deg, transparent 0%, transparent 17%,rgba(87, 146, 234,0.6) 17%, rgba(87, 146, 234,0.6) 59%,transparent 59%, transparent 64%,rgba(34, 81, 222,0.6) 64%, rgba(34, 81, 222,0.6) 100%),linear-gradient(45deg, transparent 0%, transparent 2%,rgb(87, 146, 234) 2%, rgb(87, 146, 234) 46%,rgb(114, 178, 239) 46%, rgb(114, 178, 239) 54%,transparent 54%, transparent 63%,rgb(7, 48, 216) 63%, rgb(7, 48, 216) 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
+    min-height: 100vh;
+    /* background: linear-gradient(#B78FD6, #3C6CA8); */
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#menu-icon{
+    font-size: 32px;
+    color: whitesmoke;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+    
+    
+}
+.bx-menu{
+    position: absolute;
+    left: 1630px;
+    color: white;
+    display: none;
+    
+}
+
+header.logo,
+img {
+    width: 10%;
+    height: 20%;
+}
+
+.navigation {
+    position: relative;
+    width: 350px;
+    height: 70px;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+.navigation ul li {
+    position: relative;
+    list-style-type: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+
+.navigation ul li a {
+    
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    font-family: 'League Spartan';
+    z-index: 10000;
+}
+
+.navigation ul li a .icon {
+    position: relative;
+    line-height: 80px;
+    right: 5px;
+    transition: 0.5s;
+    font-size: 30px;
+}
+
+.navigation ul li.active a .icon {
+    font-size: 20px;
+    transform: translateY(-10px);
+}
+
+.navigation ul li a .text {
+    position: absolute;
+    font-size: 12px;
+    color: #fff;
+    bottom: 5px;
+    left: 10px;
+    font-weight: 400;
+    transition: 0.25s;
+    text-transform: uppercase;
+    transform: scale(0);
+}
+
+.navigation ul li a .profil {
+    position: absolute;
+    right: -2px;
+
+
+}
+
+.navigation ul li a .contact {
+    position: absolute;
+    left: -1px;
+
+
+}
+
+.navigation ul li.active a .text {
+    transform: scale(1);
+}
+
+.indicator {
+    position: absolute;
+    left: 23px;
+    width: 70px;
+    height: 70px;
+    background: #f00;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+
+
+.navigation ul li:nth-child(1).active~.indicator {
+    background: #f53b57;
+    box-shadow: 0 15px 25px #f53b57;
+    transform: translateX(calc(70px * 0));
+}
+
+.navigation ul li:nth-child(2).active~.indicator {
+    background: #5d62fb;
+    box-shadow: 0 15px 25px #5d62fb;
+    transform: translateX(calc(70px * 1));
+}
+
+.navigation ul li:nth-child(3).active~.indicator {
+    background: #067a0a;
+    box-shadow: 0 15px 25px #05c46b;
+    transform: translateX(calc(70px * 2));
+}
+
+.navigation ul li:nth-child(4).active~.indicator {
+    background: #0d89b6;
+    box-shadow: 0 15px 25px #0fbcf9;
+    transform: translateX(calc(70px * 3));
+}
+
+/* fin header */
+
+/* debut homepage */
+section {
+    padding: 350px 15%;
+}
+
+section .hello {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 35px;
+}
+
+section .nom {
+    font-family: 'Square Peg', cursive;
+    font-size: 120px;
+}
+
+section .prenom {
+    color: rgb(135, 34, 148)
+}
+
+section .apprend {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 25px;
+}
+
+.home {
+    height: 100vh;
+    width: 100%;
+    background: url(../img/header-test.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    z-index: -1;
+    border-bottom: 1px solid black;
+}
+
+.propos {
+    /* background: #8b8c8d; */
+    display: flex;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    grid-gap: 3rem;
+    /* border-bottom: 1px solid black; */
+}
+
+
+
+
+.propos-img img {
+    max-width: 100%;
+    width: 700px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 6px 5px 20px;
+}
+
+.propos-text p {
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 28px;
+    max-width: 590px;
+    font-size: 30px;
+    margin-bottom: 45px;
+}
+
+/* debut boutton CV */
+.btn {
+    position: relative;
+    height: 50px;
+    width: 200px;
+    top: 130px;
+    right: 700px;
+    display: inline-block;
+    background: #b98b0b;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    font-weight: 600;
+    text-align: center;
+    transition: ease .35s;
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-block;
+    background: #b98b0b;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 30px;
+    width: 200px;
+    transition: ease .35s;
+    text-transform: uppercase;
+
+}
+
+.btn .cv {
+    font-size: 30px;
+    color: black;
+}
+
+.btn:hover {
+    transform: translateY(-8px);
+    border: 2px solid black;
+    background: transparent;
+}
+
+/* fin bouton CV */
+
+/* debut centre */
+
+
+.centre{
+    text-align: center;
+}
+
+.centre h2{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.centre p{
+    letter-spacing: 1px;
+    line-height: 58px;
+    font-size: 25px;
+}
+
+.contenu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, auto));
+    grid-gap: 2rem;
+    align-items: center;
+    margin-top: 4.5rem;
+}
+
+.ligne{
+    background: #0d89b6;
+    padding: 17px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .35s;
+    box-shadow: 5px 4px 20px;
+}
+
+.ligne i{
+    color: rgb(73, 29, 143);
+    margin-bottom: 20px;
+    font-size: 2.7rem;
+}
+
+.ligne h3{
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.ligne p{
+    color: #91989b;
+    line-height: 30px;
+    font-size: 40px;
+}
+
+.ligne:hover{
+    transform: translateY(-10px);
+}
+
+.services .hello {
+    font-size: 70px;
+    text-align: center;
+    text-shadow: 10px 5px 10px white;
+
+
+}
+
+.services .nom {
+    position: relative;
+    display: inline;
+    font-size: 55px;
+    text-align: center;
+
+
+}
+
+
+.services .contenu p{
+    font-size: 25px;
+    font-family:'Josefin Sans', sans-serif ;
+}
+
+.youtube{
+    text-shadow: 2px 1px 2px black, 0 0 1em blueviolet, 0 0 0.2em white;
+    color: #f00;
+}
+
+
+
+section .propos p,
+.diplomante {
+    color: rgb(135, 34, 148);
+}
+
+section .propos p,
+.metier {
+    color: firebrick;
+}
+
+/* debut portfolio */
+
+.portfolio .hello{
+    font-size: 70px;
+    text-align: center;
+    text-shadow: 10px 5px 10px white;
+}
+
+.portfolio .nom{
+    font-size: 52px;
+    text-align: center;
+    
+}
+
+
+.portfolio-content  {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, auto));
+    grid-gap: 2rem;
+    align-items: center;
+    margin-top: 4.5rem;
+    cursor: pointer;
+}
+
+
+.box img{
+    max-width: 100%;
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: all .30s;
+    box-shadow: 5px 6px 20px;
+}
+
+.box .text-p{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.box .apprend{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.box img:hover{
+    transform: scale(1.1);
+}
+
+span.youtube{
+    font-size: 25px;
+}
+
+.box .text-p{
+    font-family:'League Spartan';
+
+}
+
+.portfolio-content .box .btn {
+    position: sticky;
+    width: 140px;
+    height: 30px;
+}
+
+.portfolio-content .box .btn .cv {
+    
+    text-align: center;
+    font-size: 20px;
+    font-family:'Titillium Web';
+}
+
+
+/* debut contact */
+
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    align-items: center;
+    grid-gap: 3rem;
+}
+
+.contact-img img{
+    max-width: 100%;
+    width: 700px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 5px 6px 20px;
+}
+
+.contact .hello{
+    font-size: 70px;
+    text-align: center;
+    text-shadow: 10px 5px 10px white;
+}
+
+.contact .nom{
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.contact-formulaire form{
+    position: relative;
+}
+
+.contact-formulaire form input,
+form textarea {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background: #fff;
+    color: #5d62fb;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 10px;
+}
+
+.contact-formulaire textarea{
+    resize: none;
+    height: 200px;
+}
+
+.contact-formulaire form .send{
+    display: inline-block;
+    background: #b98b0b;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 30px;
+    width: 200px;
+    transition: ease .35s;
+    text-transform: uppercase;
+
+}
+
+.contact-formulaire form .send:hover{
+    transform: translateY(-8px);
+    cursor: pointer;
+}
+
+/* debut footer */
+
+.footer{
+    background: whitesmoke;
+    padding: 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer p{
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+
+
+}
+
+.icon-footer a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: violet;
+    width: 35px;
+    height: 35px;
+    margin: 0px 5px;
+    color: #5d62fb;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    transition: all .40s;
+    text-decoration: none;
+}
+
+.icon-footer a:hover{
+    transform: translateY(-8px);
+}
+
+/* debut responsive */
+@media (max-width: 1270px){
+    header{
+        padding: 18px 4%;
+        transition: .2s;
+    }
+    section{
+        padding: 80px 4%;
+        transition: .2s;
+    }
+}
+
+@media (max-width: 990px){
+    .home{
+        height: 85vh;
+
+    }
+    #menu-icon{
+        display: initial;
+    }
+    .bx-men{
+        display: initial;
+    }
+    .navigation{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: left;
+        transition: all .30s;
+        
+    }
+    .propos{
+        grid-template-columns: 1fr;
+    }
+    .propos-img{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .propos-img img{
+        max-width: 100%;
+        width: 700px;
+        height: auto;
+    }
+    .btn{
+        max-width: 200%;
+        width: 80px;
+        height: auto;
+        right: 615px; /*a surveiller*/
+    }
+
+    .portfolio-content .box .btn {
+        left: 140px;
+        top: -80px;
+        width: 140px;
+        height: 30px;
+    }
+    
+    .portfolio-content .box .btn .cv {
+        
+        text-align: center;
+        font-size: 20px;
+        font-family:'Titillium Web';
+    }
+    .contact{
+        grid-template-columns: 1fr;
+
+    }
+    .contact-img{
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .contact-formulaire{
+        order: 2;
+
+    }
+    .box img{
+        max-width: 100%;
+        width: 760px;
+        height: auto;
+    }
+}
+
+@media (max-width: 1724px){
+    .portfolio-content .box .btn {
+        left: 140px;
+        top: -108px;
+        width: 140px;
+        height: 30px;
+    }
+    
+    .portfolio-content .box .btn .cv {
+        
+        text-align: center;
+        font-size: 20px;
+        font-family:'Titillium Web';
+    }
+}
